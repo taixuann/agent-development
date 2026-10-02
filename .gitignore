@@ -1,2 +1,5 @@
 # Temporary linked Git worktrees - never commit their contents.
 worktrees/
+# Machine-local harness configs.
+.claude/settings.local.json
+.impeccable/config.local.json

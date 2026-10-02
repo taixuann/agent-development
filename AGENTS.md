@@ -10,7 +10,7 @@ Use the harness plugin as the default software-development methodology. It owns 
 
 For substantial change-making work, prefer isolated Git worktrees under:
 
-`/Users/tai/agent-development/worktrees/`
+`~/agent-development/worktrees/`
 
 The canonical repository (the product home checkout) owns the product source. A worktree never transfers repository ownership to this workshop. When valid isolation already exists, reuse it instead of creating another worktree. When the task is complete and integrated or pushed, remove only the current task worktree with `git worktree remove`. Leave any dirty worktree in place. Leave any worktree with unpushed commits in place. Leave any other task worktree in place.
 
