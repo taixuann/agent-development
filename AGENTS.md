@@ -4,7 +4,7 @@ This workspace is a temporary software-development workshop. It owns reusable pr
 
 ## Methodology
 
-Use the harness plugin as the default software-development methodology. It owns isolation, planning, test-first implementation, debugging, verification, review, and branch integration.
+Use the harness Superpowers plugin as the development methodology. It owns isolation, planning, test-first implementation, debugging, verification, review, and branch integration. Skip `/improve` here. Run all implementation through the plugin skills.
 
 ## Worktrees
 
