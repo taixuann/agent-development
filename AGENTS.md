@@ -44,3 +44,17 @@ Only when requirements are unclear, load `prototype`. Only for UI work, load `im
 ## Scope
 
 This repository is not a product monorepo, a research repository, a documentation knowledge base, a package registry, or the canonical source of any application. Keep project conventions in the project. Keep framework knowledge in the owning specialist skill.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in this repo's GitHub Issues. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-role vocabulary. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout. See `docs/agents/domain.md`.
