@@ -4,7 +4,18 @@ This workspace is a temporary software-development workshop. It owns reusable pr
 
 ## Methodology
 
-Use the harness Superpowers plugin as the development methodology. It owns isolation, planning, test-first implementation, debugging, verification, review, and branch integration. Skip `/improve` here. Run all implementation through the plugin skills.
+Use the installed engineering skills for the current operation.
+Read the selected skill before execution.
+
+For agreed work, use `superpowers:subagent-driven-development`.
+For a spec with dependent tickets, use `superpowers:writing-plans` then `superpowers:executing-plans`.
+For test-first implementation, use `superpowers:test-driven-development`.
+For bugs, use `superpowers:systematic-debugging`.
+For review, use `superpowers:receiving-code-review`.
+
+Use Superpowers when the user selects it or the owning project requires it.
+Before execution, resolve conflicts between the selected skill and project instructions.
+Keep publication and integration within the user's authorized scope.
 
 ## Worktrees
 
@@ -20,17 +31,17 @@ Before changing a product, read that repository's own `AGENTS.md`. Project-speci
 
 ## Specialist skills
 
-Use the narrowest local skill that owns the current operation. Use one skill per operation.
+Select the narrowest local skill that owns the current operation.
+Executor adapters and specialist references can assist that skill without replacing its authority.
 
 - `codebase-design`: define module interfaces and seams.
-- `prototype`: answer an open design question with throwaway code.
 - `impeccable`: shape UI and design quality.
 - `swiftui-expert-skill`: write SwiftUI code for iOS or macOS.
 - `playwright-cli`: prove web UI behavior in a real browser.
 - `gh-fix-ci`: repair a failed check on an existing PR.
-- `gh-address-comments`: address review threads on an existing PR.
+- `gh-address-comments`: address review threads on an open GitHub PR.
 
-Only when requirements are unclear, load `prototype`. Only for UI work, load `impeccable`. Only for SwiftUI work, load `swiftui-expert-skill`.
+Only for UI work, load `impeccable`. Only for SwiftUI work, load `swiftui-expert-skill`.
 
 ## Safety
 
@@ -47,14 +58,8 @@ This repository is not a product monorepo, a research repository, a documentatio
 
 ## Agent skills
 
-### Issue tracker
+Before reading or publishing tickets, read [Issue tracker](docs/agents/issue-tracker.md).
 
-Issues live in this repo's GitHub Issues. See `docs/agents/issue-tracker.md`.
+Before triage, read [Triage labels](docs/agents/triage-labels.md).
 
-### Triage labels
-
-Default five-role vocabulary. See `docs/agents/triage-labels.md`.
-
-### Domain docs
-
-Single-context layout. See `docs/agents/domain.md`.
+Before exploring terminology or architecture, read [Domain docs](docs/agents/domain.md).
