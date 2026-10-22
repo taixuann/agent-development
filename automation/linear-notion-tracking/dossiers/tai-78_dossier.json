@@ -1,0 +1,145 @@
+{
+  "identifier": "TAI-78",
+  "title": "Idea 1 \u2014 Windows launch and distribution",
+  "harvested_at": "2026-10-21T15:43:10.046271+00:00",
+  "canonical_path": "/Users/tai/research-projects/tools/raw-viewer",
+  "default_branch": "master",
+  "target_project": "Raw Viewer",
+  "graphify_evidence": {
+    "query": "Idea 1 \u2014 Windows launch and distribution",
+    "nodes_count": 25,
+    "nodes": [
+      {
+        "name": "Windows Full-Parity Deferred Resumption Plan",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L1 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "1. Executive Summary & Intent",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L9 community=3. Detailed Component Specifications"
+      },
+      {
+        "name": "1. Problem Statement & Motivation",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L3 community=2. Architecture & Design"
+      },
+      {
+        "name": "Resumption gates",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L53 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "RawViewer Control Plane and Interactive 3-Panel Visual Profile & View Editor Workspace Design",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L1 community=3. Detailed Component Specifications"
+      },
+      {
+        "name": "Deep-Nested Tree Selection & Impeccable Visual Profile Editor Studio Specification",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L1 community=2. Architecture & Design"
+      },
+      {
+        "name": "2026-10-09-windows-full-parity-deferred.md",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L1 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "Evidence and ownership",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L29 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "Global Constraints",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L19 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "Review Focus",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L45 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "Self-review and handoff",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L86 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "Status and priority",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L13 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "3. Detailed Component Specifications",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L42 community=3. Detailed Component Specifications"
+      },
+      {
+        "name": "2. Architecture & Design",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L23 community=2. Architecture & Design"
+      },
+      {
+        "name": "4. Impeccable 3-Panel Editor Workspace UX",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L96 community=3. Detailed Component Specifications"
+      },
+      {
+        "name": "Gate 1: Freeze the macOS parity baseline",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L55 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "Gate 2: Approve a bounded feasibility probe",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L61 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "Gate 3: Approve platform design",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L68 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "Gate 4: Write execution-ready plans",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L75 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "Gate 5: Build, verify, and distribute only within authorized scope",
+        "metadata": "src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L80 community=Windows Full-Parity Deferred Resumption Plan"
+      },
+      {
+        "name": "2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L1 community=3. Detailed Component Specifications"
+      },
+      {
+        "name": "2. Architecture & Directory Structure",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L25 community=3. Detailed Component Specifications"
+      },
+      {
+        "name": "5. Verification & Acceptance Criteria",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L137 community=3. Detailed Component Specifications"
+      },
+      {
+        "name": "2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L1 community=2. Architecture & Design"
+      },
+      {
+        "name": "3. Invariants & Verification Gates",
+        "metadata": "src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L84 community=2. Architecture & Design"
+      }
+    ],
+    "raw_output": "Graph: graphify-out/graph.json (2152 nodes) | Traversal: BFS depth=2 | Start: ['Windows Full-Parity Deferred Resumption Plan', '1. Executive Summary & Intent', '1. Problem Statement & Motivation'] | 25 nodes found\n\n[i] Complete answer over budget: all 25 nodes and 22 edges shown (~3093 tokens vs the requested ~2000-token budget). Edges are never dropped once every node fits, so this is already the full answer \u2014 raising --budget further will not shrink it. Narrow with context_filter=['call'] or use get_node for a specific symbol to reduce size instead.\n\nNODE Windows Full-Parity Deferred Resumption Plan [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L1 community=Windows Full-Parity Deferred Resumption Plan]\nNODE 1. Executive Summary & Intent [src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L9 community=3. Detailed Component Specifications]\nNODE 1. Problem Statement & Motivation [src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L3 community=2. Architecture & Design]\nNODE Resumption gates [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L53 community=Windows Full-Parity Deferred Resumption Plan]\nNODE RawViewer Control Plane and Interactive 3-Panel Visual Profile & View Editor Workspace Design [src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L1 community=3. Detailed Component Specifications]\nNODE Deep-Nested Tree Selection & Impeccable Visual Profile Editor Studio Specification [src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L1 community=2. Architecture & Design]\nNODE 2026-10-09-windows-full-parity-deferred.md [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L1 community=Windows Full-Parity Deferred Resumption Plan]\nNODE Evidence and ownership [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L29 community=Windows Full-Parity Deferred Resumption Plan]\nNODE Global Constraints [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L19 community=Windows Full-Parity Deferred Resumption Plan]\nNODE Review Focus [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L45 community=Windows Full-Parity Deferred Resumption Plan]\nNODE Self-review and handoff [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L86 community=Windows Full-Parity Deferred Resumption Plan]\nNODE Status and priority [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L13 community=Windows Full-Parity Deferred Resumption Plan]\nNODE 3. Detailed Component Specifications [src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L42 community=3. Detailed Component Specifications]\nNODE 2. Architecture & Design [src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L23 community=2. Architecture & Design]\nNODE 4. Impeccable 3-Panel Editor Workspace UX [src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L96 community=3. Detailed Component Specifications]\nNODE Gate 1: Freeze the macOS parity baseline [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L55 community=Windows Full-Parity Deferred Resumption Plan]\nNODE Gate 2: Approve a bounded feasibility probe [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L61 community=Windows Full-Parity Deferred Resumption Plan]\nNODE Gate 3: Approve platform design [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L68 community=Windows Full-Parity Deferred Resumption Plan]\nNODE Gate 4: Write execution-ready plans [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L75 community=Windows Full-Parity Deferred Resumption Plan]\nNODE Gate 5: Build, verify, and distribute only within authorized scope [src=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md loc=L80 community=Windows Full-Parity Deferred Resumption Plan]\nNODE 2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md [src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L1 community=3. Detailed Component Specifications]\nNODE 2. Architecture & Directory Structure [src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L25 community=3. Detailed Component Specifications]\nNODE 5. Verification & Acceptance Criteria [src=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md loc=L137 community=3. Detailed Component Specifications]\nNODE 2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md [src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L1 community=2. Architecture & Design]\nNODE 3. Invariants & Verification Gates [src=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md loc=L84 community=2. Architecture & Design]\nEDGE Deep-Nested Tree Selection & Impeccable Visual Profile Editor Studio Specification --contains [EXTRACTED]--> 1. Problem Statement & Motivation at=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md:L3\nEDGE RawViewer Control Plane and Interactive 3-Panel Visual Profile & View Editor Workspace Design --contains [EXTRACTED]--> 1. Executive Summary & Intent at=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md:L9\nEDGE 2026-10-09-windows-full-parity-deferred.md --contains [EXTRACTED]--> Windows Full-Parity Deferred Resumption Plan at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L1\nEDGE Windows Full-Parity Deferred Resumption Plan --contains [EXTRACTED]--> Status and priority at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L13\nEDGE Windows Full-Parity Deferred Resumption Plan --contains [EXTRACTED]--> Global Constraints at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L19\nEDGE Windows Full-Parity Deferred Resumption Plan --contains [EXTRACTED]--> Evidence and ownership at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L29\nEDGE Windows Full-Parity Deferred Resumption Plan --contains [EXTRACTED]--> Review Focus at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L45\nEDGE Windows Full-Parity Deferred Resumption Plan --contains [EXTRACTED]--> Resumption gates at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L53\nEDGE Windows Full-Parity Deferred Resumption Plan --contains [EXTRACTED]--> Self-review and handoff at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L86\nEDGE 2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md --contains [EXTRACTED]--> Deep-Nested Tree Selection & Impeccable Visual Profile Editor Studio Specification at=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md:L1\nEDGE Deep-Nested Tree Selection & Impeccable Visual Profile Editor Studio Specification --contains [EXTRACTED]--> 2. Architecture & Design at=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md:L23\nEDGE Deep-Nested Tree Selection & Impeccable Visual Profile Editor Studio Specification --contains [EXTRACTED]--> 3. Invariants & Verification Gates at=docs/superpowers/specs/2026-10-10-tree-nested-selection-and-visual-editor-dual-view-design.md:L84\nEDGE 2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md --contains [EXTRACTED]--> RawViewer Control Plane and Interactive 3-Panel Visual Profile & View Editor Workspace Design at=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md:L1\nEDGE RawViewer Control Plane and Interactive 3-Panel Visual Profile & View Editor Workspace Design --contains [EXTRACTED]--> 5. Verification & Acceptance Criteria at=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md:L137\nEDGE RawViewer Control Plane and Interactive 3-Panel Visual Profile & View Editor Workspace Design --contains [EXTRACTED]--> 2. Architecture & Directory Structure at=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md:L25\nEDGE RawViewer Control Plane and Interactive 3-Panel Visual Profile & View Editor Workspace Design --contains [EXTRACTED]--> 3. Detailed Component Specifications at=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md:L42\nEDGE RawViewer Control Plane and Interactive 3-Panel Visual Profile & View Editor Workspace Design --contains [EXTRACTED]--> 4. Impeccable 3-Panel Editor Workspace UX at=docs/superpowers/specs/2026-10-10-rawviewer-control-plane-and-editor-workspace-design.md:L96\nEDGE Resumption gates --contains [EXTRACTED]--> Gate 1: Freeze the macOS parity baseline at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L55\nEDGE Resumption gates --contains [EXTRACTED]--> Gate 2: Approve a bounded feasibility probe at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L61\nEDGE Resumption gates --contains [EXTRACTED]--> Gate 3: Approve platform design at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L68\nEDGE Resumption gates --contains [EXTRACTED]--> Gate 4: Write execution-ready plans at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L75\nEDGE Resumption gates --contains [EXTRACTED]--> Gate 5: Build, verify, and distribute only within authorized scope at=docs/superpowers/plans/2026-10-09-windows-full-parity-deferred.md:L80"
+  },
+  "linear_overlaps": [],
+  "active_worktrees": [
+    {
+      "path": "/Users/tai/agent-development/worktrees/raw-viewer-ergonomics",
+      "branch": "fix-editor-ergonomics-and-excel-coords",
+      "modified_modules": [
+        ".superpowers",
+        "RawViewApp/Editor",
+        "RawViewCore/Discovery",
+        "RawViewCoreTests/FilenameGrammarEngineTests.swift",
+        "Scripts",
+        "docs"
+      ],
+      "total_modified_files": 15
+    }
+  ],
+  "worktree_conflicts": {
+    "has_conflict": false,
+    "conflicts": []
+  },
+  "repository_invariants": [
+    "Profile Fallback**: Profiles are loaded from `<project>/.rawviewer/instrument/`. If missing, fallback to `data/.rawview/instrument/` and `data/instruments/` (ignoring empty directories).",
+    "Editor Performance**: The raw data canvas displays a virtualized window of the first 500 lines to guarantee 120 FPS UI performance.",
+    "Verification**: Always run `./Scripts/check_core.sh` and `./Scripts/check_index_cli.sh` before declaring completion."
+  ],
+  "issue_metadata": {
+    "status": null,
+    "priority": null,
+    "description_length": 0
+  }
+}

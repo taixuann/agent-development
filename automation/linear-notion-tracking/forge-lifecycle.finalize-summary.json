@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "workflow",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json"
+  },
+  "artifact": {
+    "path": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.html",
+    "sha256": "e3a4c3c6ab456ff4edeb93fa444efd6e3727f094c3453174d4d7a9bc3aa66b59",
+    "bytes": 829416
+  },
+  "gates": {
+    "validate": "fail",
+    "deliver": "not-run",
+    "check": "not-run",
+    "browser-check": "not-run"
+  },
+  "failedStage": "validate",
+  "diagnostics": [
+    {
+      "code": "input/read",
+      "severity": "error",
+      "message": "Input could not be read: ENOENT: no such file or directory, open '/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json'",
+      "subject": {
+        "input": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json"
+      },
+      "evidence": {
+        "systemCode": "ENOENT",
+        "reason": "ENOENT: no such file or directory, open '/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json'"
+      },
+      "supportedFixes": [
+        "provide one readable JSON input file"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.finalize.json",
+    "summaryReceipt": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-21T11:51:16.605Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 106,
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  },
+  "nextAction": {
+    "action": "edit-in-place",
+    "candidate": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json",
+    "constraint": "Preserve unaffected semantics and geometry; apply each diagnostic's supportedFixes, or the fix its message names, and do not replace the whole candidate.",
+    "then": "finalize-once"
+  }
+}

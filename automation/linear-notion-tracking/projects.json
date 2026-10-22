@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "projects": {
+    "Raw Viewer": {
+      "linear_name": "Raw Viewer",
+      "canonical_path": "/Users/tai/research-projects/tools/raw-viewer",
+      "workshop_path": "/Users/tai/agent-development",
+      "worktrees_dir": "/Users/tai/agent-development/worktrees",
+      "tech_stack": "swift-macos",
+      "models": {
+        "context": "gpt-6.1-sol",
+        "planning": "gpt-6.1-sol",
+        "executing": "deepseek-v4.1-flash",
+        "executing_fallback": "gpt-6-luna-high"
+      },
+      "active": true
+    }
+  }
+}

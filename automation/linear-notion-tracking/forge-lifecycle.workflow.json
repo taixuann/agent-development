@@ -1,0 +1,266 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Forge Autonomous Issue Lifecycle: Intake to Execution",
+    "subtitle": "Complete interactive workflow from idea clustering, Graphify context, Decision Engine audit to sandboxed worktree execution",
+    "animation": "trace",
+    "visual_preset": "signal-flow",
+    "quality_profile": "showcase",
+    "output": "forge-lifecycle.html"
+  },
+  "lanes": [
+    { "id": "intake", "label": "1. Idea Intake & Triage" },
+    { "id": "context", "label": "2. Pre-flight Context Harvester" },
+    { "id": "planning", "label": "3. Adversarial Planning Engine" },
+    { "id": "executing", "label": "4. Autonomous Goal Executor" },
+    { "id": "sandbox", "label": "5. Worktree Sandbox & Git" },
+    { "id": "governance", "label": "6. Human Governance Gates", "variant": "exception" }
+  ],
+  "phases": [
+    { "id": "phase_intake", "label": "Intake & Clustering", "fromCol": 0, "toCol": 1 },
+    { "id": "phase_context", "label": "Context & Conflict Detection", "fromCol": 2, "toCol": 2, "variant": "emphasis" },
+    { "id": "phase_planning", "label": "Plan Audit & Push", "fromCol": 3, "toCol": 3, "variant": "emphasis" },
+    { "id": "phase_executing", "label": "Autonomous Goal Supervision", "fromCol": 4, "toCol": 4, "variant": "emphasis" },
+    { "id": "phase_delivery", "label": "Review Pass & Draft PR", "fromCol": 5, "toCol": 5, "variant": "emphasis" }
+  ],
+  "groups": [
+    { "id": "triage_group", "label": "Backlog Quick Triage", "lane": "intake", "fromCol": 0, "toCol": 1 },
+    { "id": "context_group", "label": "Pre-flight Verification", "lane": "context", "fromCol": 2, "toCol": 2, "variant": "emphasis" },
+    { "id": "planning_group", "label": "3-Step Plan Audit", "lane": "planning", "fromCol": 3, "toCol": 4, "variant": "emphasis" },
+    { "id": "exec_group", "label": "TDD Goal Supervisor (Max 3 cycles)", "lane": "executing", "fromCol": 4, "toCol": 5, "variant": "emphasis" },
+    { "id": "delivery_group", "label": "Sanitation & PR Delivery", "lane": "sandbox", "fromCol": 4, "toCol": 5 }
+  ],
+  "mainPath": [
+    "user_idea",
+    "backlog_cluster",
+    "harvester",
+    "worktree_scan",
+    "context_gate",
+    "plan_draft",
+    "plan_audit",
+    "plan_gate",
+    "sandbox_lock",
+    "goal_supervisor",
+    "code_review",
+    "draft_pr_push",
+    "result_gate"
+  ],
+  "nodes": [
+    {
+      "id": "user_idea",
+      "lane": "intake",
+      "col": 0,
+      "type": "external",
+      "label": "Idea Capture",
+      "sublabel": "Linear issue / inbox note",
+      "tag": "raw intent",
+      "width": 128
+    },
+    {
+      "id": "backlog_cluster",
+      "lane": "intake",
+      "col": 1,
+      "type": "frontend",
+      "label": "Sweep & Absorb",
+      "sublabel": "Merge & mark Duplicate",
+      "tag": "backlog deduplication",
+      "width": 128
+    },
+    {
+      "id": "harvester",
+      "lane": "context",
+      "col": 2,
+      "type": "backend",
+      "label": "Context Harvester",
+      "sublabel": "AST & Linear overlaps",
+      "tag": "agent:context",
+      "width": 128
+    },
+    {
+      "id": "worktree_scan",
+      "lane": "sandbox",
+      "col": 2,
+      "type": "database",
+      "label": "Worktree Scan",
+      "sublabel": "Check active branch diffs",
+      "tag": "BLOCKED_BY detection",
+      "width": 128
+    },
+    {
+      "id": "context_gate",
+      "lane": "governance",
+      "col": 2,
+      "type": "security",
+      "label": "Context Review Gate",
+      "sublabel": "human:context-review",
+      "tag": "choose Option A vs B",
+      "width": 128
+    },
+    {
+      "id": "plan_draft",
+      "lane": "planning",
+      "col": 3,
+      "type": "backend",
+      "label": "Codex TDD Draft",
+      "sublabel": "Superpowers plan schema",
+      "tag": "agent:planning",
+      "width": 128
+    },
+    {
+      "id": "plan_commit",
+      "lane": "sandbox",
+      "col": 3,
+      "type": "cloud",
+      "label": "Plans-as-Code Push",
+      "sublabel": "Commit to docs/plans",
+      "tag": "GitHub blob link",
+      "width": 128
+    },
+    {
+      "id": "plan_audit",
+      "lane": "planning",
+      "col": 4,
+      "type": "security",
+      "label": "Decision Audit",
+      "sublabel": "/audit-writing-plans",
+      "tag": "Ponytail & risk audit",
+      "width": 128
+    },
+    {
+      "id": "plan_gate",
+      "lane": "governance",
+      "col": 4,
+      "type": "security",
+      "label": "Plan Review Gate",
+      "sublabel": "human:plan-review",
+      "tag": "inspect plan on GitHub",
+      "width": 128
+    },
+    {
+      "id": "goal_supervisor",
+      "lane": "executing",
+      "col": 4,
+      "type": "backend",
+      "label": "Goal Supervisor",
+      "sublabel": "Up to 3 TDD repair cycles",
+      "tag": "agent:executing",
+      "width": 128
+    },
+    {
+      "id": "sandbox_lock",
+      "lane": "sandbox",
+      "col": 4,
+      "type": "database",
+      "label": "Sandbox rev-parse",
+      "sublabel": "Strict worktree directory",
+      "tag": "anti-escape",
+      "width": 128
+    },
+    {
+      "id": "code_review",
+      "lane": "executing",
+      "col": 5,
+      "type": "security",
+      "label": "Scope & Code Review",
+      "sublabel": "Anti-drift & 1 fix pass",
+      "tag": "bounded review",
+      "width": 128
+    },
+    {
+      "id": "draft_pr_push",
+      "lane": "sandbox",
+      "col": 5,
+      "type": "cloud",
+      "label": "Sanitize & Draft PR",
+      "sublabel": "Purge scratch & Draft PR",
+      "tag": "gh CLI",
+      "width": 128
+    },
+    {
+      "id": "result_gate",
+      "lane": "governance",
+      "col": 5,
+      "type": "security",
+      "label": "Result Review Gate",
+      "sublabel": "human:result-review",
+      "tag": "inspect draft PR",
+      "width": 128
+    },
+    {
+      "id": "merge_node",
+      "lane": "planning",
+      "col": 5,
+      "type": "frontend",
+      "label": "Squash & Repo Care",
+      "sublabel": "gh pr merge -> Done",
+      "tag": "agent:merging",
+      "width": 128
+    },
+    {
+      "id": "cancel_node",
+      "lane": "intake",
+      "col": 5,
+      "type": "external",
+      "label": "Archive & Prune",
+      "sublabel": "archive/canceled/<id>",
+      "tag": "Canceled",
+      "width": 128
+    }
+  ],
+  "edges": [
+    { "id": "e_capture_triage", "from": "user_idea", "to": "backlog_cluster", "variant": "default" },
+    { "id": "e_triage_harvest", "from": "backlog_cluster", "to": "harvester", "label": "trigger agent:context", "variant": "emphasis" },
+    { "id": "e_harvest_wtscan", "from": "harvester", "to": "worktree_scan", "variant": "default" },
+    { "id": "e_wtscan_gate", "from": "worktree_scan", "to": "context_gate", "label": "report options + conflicts", "variant": "security" },
+    { "id": "e_gate_approved", "from": "context_gate", "to": "plan_draft", "label": "human approves approach", "variant": "emphasis" },
+    { "id": "e_draft_commit", "from": "plan_draft", "to": "plan_commit", "variant": "default" },
+    { "id": "e_draft_audit", "from": "plan_draft", "to": "plan_audit", "label": "adversarial review", "variant": "emphasis" },
+    { "id": "e_audit_gate", "from": "plan_audit", "to": "plan_gate", "label": "post plan link to Linear", "variant": "security" },
+    { "id": "e_gate_sandbox", "from": "plan_gate", "to": "sandbox_lock", "label": "human approves plan", "variant": "emphasis" },
+    { "id": "e_sandbox_exec", "from": "sandbox_lock", "to": "goal_supervisor", "label": "sandbox verified", "variant": "emphasis" },
+    { "id": "e_exec_review", "from": "goal_supervisor", "to": "code_review", "label": "TDD tests green", "variant": "emphasis" },
+    { "id": "e_review_pr", "from": "code_review", "to": "draft_pr_push", "label": "purge scratch & push", "variant": "emphasis" },
+    { "id": "e_pr_gate", "from": "draft_pr_push", "to": "result_gate", "label": "post Draft PR link to Linear", "variant": "security" },
+    { "id": "e_gate_merge", "from": "result_gate", "to": "merge_node", "label": "approve -> agent:merging", "variant": "emphasis" },
+    { "id": "e_gate_cancel", "from": "result_gate", "to": "cancel_node", "label": "abandon -> Canceled", "variant": "security" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Backlog Absorption & Quota Fallbacks",
+      "items": [
+        "Backlog Idea Absorption: agent:context sweeps unstarted backlog issues, merges overlapping requirements, and marks absorbed issues as Duplicate on Linear.",
+        "Decision Engine Fallback: If DE quota is exhausted, auto-routes to independent Codex audit session running the /audit-writing-plans rubric.",
+        "Execution Fallback: If OpenCode Free Router is exhausted, auto-routes execution to Codex gpt-6-luna-high."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Guarantees & Superpowers",
+      "items": [
+        "Superpowers for OpenCode: Installed and active in OpenCode via plugin manager (superpowers@git).",
+        "Strict Directory Sandbox: rev-parse assertion guarantees OpenCode and Codex execute strictly in ~/worktrees/ident.",
+        "Graphify AST Verification: Zero hallucinated symbols or files in implementation plans."
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Execution Hygiene & Anti-Drift",
+      "items": [
+        "Anti-Drift Scope Review: check_scope_boundary_conformance alerts foreign modifications without blind auto-reverts.",
+        "Physical Goal Supervisor: Autonomous execution runs up to 3 repair cycles against real test suites (swift test / CoreSelfCheck).",
+        "Bounded Native Review: Exactly 1 pass of codex exec review --base and at most 1 fix cycle; prevents review thrashing.",
+        "Zero Test Litter: Scratch and loose test scripts are purged prior to Draft PR publication."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Merge & Canceled Lifecycle",
+      "items": [
+        "Squash & Merge (agent:merging): gh pr merge --squash, canonical git pull, github-repo-care doc updates, final sanity check, worktree prune, and auto-transition to Done.",
+        "Canceled Issue Archive: Lingering worktrees are pruned immediately; WIP branches are archived remotely to archive/canceled/<ident> so zero work is lost."
+      ]
+    }
+  ]
+}

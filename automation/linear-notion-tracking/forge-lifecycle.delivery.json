@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "4aadb184-1cd6-4f7f-9965-3234ec5c6b35",
+  "status": "current",
+  "command": "deliver",
+  "type": "workflow",
+  "input": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json",
+  "output": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.html",
+  "specification": {
+    "sha256": "58f0a9ef0c891fb9eca55fcf100fe2c205c55e1d1a18348658429ebb90393c27",
+    "bytes": 10136
+  },
+  "artifact": {
+    "sha256": "f9f6fc576804e5158d1022e1e4d250309c9162c1703d53bbbf8e34ef3eca64da",
+    "bytes": 851415
+  }
+}

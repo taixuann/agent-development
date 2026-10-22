@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "workflow",
+  "quality": "showcase",
+  "startedAt": "2026-10-21T16:12:29.065Z",
+  "specification": {
+    "path": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json"
+  },
+  "artifact": {
+    "path": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.html",
+    "sha256": "e3a4c3c6ab456ff4edeb93fa444efd6e3727f094c3453174d4d7a9bc3aa66b59",
+    "bytes": 829416
+  },
+  "stages": {
+    "validate": {
+      "status": "fail",
+      "exitCode": 1,
+      "durationMs": null,
+      "command": [
+        "/Users/tai/.local/share/fnm/node-versions/v22.22.3/installation/bin/node",
+        "/Users/tai/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "workflow",
+        "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json",
+        "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": false,
+        "command": "deliver",
+        "receiptId": "9d3a9a3b-2901-49ae-94fd-38c86bff77da",
+        "stage": "input",
+        "type": "workflow",
+        "input": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json",
+        "output": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.html",
+        "error": "Could not read delivery input \"/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json\": ENOENT: no such file or directory, open '/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json'",
+        "diagnostics": [
+          {
+            "code": "input/read",
+            "severity": "error",
+            "message": "Input could not be read: ENOENT: no such file or directory, open '/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json'",
+            "subject": {
+              "input": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json"
+            },
+            "evidence": {
+              "systemCode": "ENOENT",
+              "reason": "ENOENT: no such file or directory, open '/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json'"
+            },
+            "supportedFixes": [
+              "provide one readable JSON input file"
+            ]
+          }
+        ],
+        "provenance": "failed"
+      },
+      "execution": "embedded-in-deliver"
+    },
+    "deliver": {
+      "status": "not-run",
+      "execution": "blocked-by-validate"
+    }
+  },
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  },
+  "diagnostics": [
+    {
+      "code": "input/read",
+      "severity": "error",
+      "message": "Input could not be read: ENOENT: no such file or directory, open '/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json'",
+      "subject": {
+        "input": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json"
+      },
+      "evidence": {
+        "systemCode": "ENOENT",
+        "reason": "ENOENT: no such file or directory, open '/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.workflow.json'"
+      },
+      "supportedFixes": [
+        "provide one readable JSON input file"
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.finalize.json",
+    "summaryReceipt": "/Users/tai/personal-hub/assets/linear-notion-tracking/forge-lifecycle.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "failedStage": "validate",
+  "finishedAt": "2026-10-21T16:12:29.171Z",
+  "durationMs": 106,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-21T11:51:16.605Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}
