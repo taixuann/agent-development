@@ -44,8 +44,8 @@ Only issues belonging to registered active projects in `projects.json` are synch
     "Raw Viewer": {
       "linear_name": "Raw Viewer",
       "canonical_path": "/Users/tai/research-projects/tools/raw-viewer",
-      "workshop_path": "/Users/tai/agent-development",
-      "worktrees_dir": "/Users/tai/agent-development/worktrees",
+      "workshop_path": "/Users/tai/development-space",
+      "worktrees_dir": "/Users/tai/development-space/worktrees",
       "tech_stack": "swift-macos",
       "models": {
         "context": "gpt-6.1-sol",
@@ -67,7 +67,7 @@ Autonomous orchestrator implementing the **Forge / Superpowers** contract:
 1. **Zero Idle Overhead**: Scans for `agent:*` labels. If none found, exits in <1s.
 2. **Phase Routing & Model Assignment**:
    - `agent:context`: Codex (`gpt-6.1-sol`) on canonical repo (read-only). Analyzes codebase knowledge graph via Graphify, checks for team issue overlaps, and scans for in-flight worktree conflicts.
-   - `agent:planning`: Codex (`gpt-6.1-sol`). Provisions isolated Git worktree (`~/agent-development/worktrees/<ident>/`), drafts TDD plan into `docs/plans/`, runs Decision Engine / `/audit-writing-plans` quality audit, certifies code seams via Graphify AST, commits to branch `forge/<ident>`, pushes to GitHub (no PR), and posts concise review link to Linear.
+   - `agent:planning`: Codex (`gpt-6.1-sol`). Provisions isolated Git worktree (`~/development-space/worktrees/<ident>/`), drafts TDD plan into `docs/plans/`, runs Decision Engine / `/audit-writing-plans` quality audit, certifies code seams via Graphify AST, commits to branch `forge/<ident>`, pushes to GitHub (no PR), and posts concise review link to Linear.
    - `agent:executing`: OpenCode Free Router in isolated git worktree with pre/post canonical isolation assertions and automated test gates.
 3. **Execution Trail in Notion**: Records `Phase`, `Engine & Model`, `Session ID`, `Worktree & Branch`, `Base Commit`, and `Gate / Status` directly in the Notion page body under `## Agent Execution Trail` without mutating database schema.
 4. **Human Review Gates**: Upon phase completion, posts a structured comment to Linear, transitions to matching `human:*` review gate (`human:context-review`, `human:plan-review`, `human:result-review`), and **STOPS** for human review.

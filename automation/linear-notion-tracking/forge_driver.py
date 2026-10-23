@@ -15,7 +15,7 @@ Rules:
    - Execution & Routine: opencode (opencode-zen -> fallback opencode-go).
 4. Worktree isolation:
    - Context & Planning: Read-only on canonical path (NO worktree).
-   - Executing: Isolated git worktree in ~/agent-development/worktrees/.
+   - Executing: Isolated git worktree in ~/development-space/worktrees/.
 5. Durable metadata: Record Session ID, log link, and artifact trail in Linear & Notion body.
 """
 
@@ -321,9 +321,9 @@ def get_default_branch(canonical_path: str) -> str:
 
 
 def prepare_worktree_if_needed(project_config: dict, identifier: str) -> dict:
-    """Ensure an isolated git worktree exists under ~/agent-development/worktrees/."""
+    """Ensure an isolated git worktree exists under ~/development-space/worktrees/."""
     canonical = project_config.get("canonical_path")
-    worktrees_root = Path(project_config.get("worktrees_dir", "/Users/tai/agent-development/worktrees"))
+    worktrees_root = Path(project_config.get("worktrees_dir", "/Users/tai/development-space/worktrees"))
     worktrees_root.mkdir(parents=True, exist_ok=True)
 
     branch_name = f"forge/{identifier.lower()}"
@@ -886,7 +886,7 @@ def cleanup_canceled_issues(
 
         proj_config = registry[proj_name]
         canonical = proj_config.get("canonical_path")
-        worktrees_root = Path(proj_config.get("worktrees_dir", "/Users/tai/agent-development/worktrees"))
+        worktrees_root = Path(proj_config.get("worktrees_dir", "/Users/tai/development-space/worktrees"))
         worktree_path = worktrees_root / ident.lower()
 
         if not worktree_path.exists():
@@ -989,7 +989,7 @@ def run_phase_driver(
 
     if needs_wt:
         if dry_run:
-            worktree_path = f"/Users/tai/agent-development/worktrees/{identifier.lower()} (planned)"
+            worktree_path = f"/Users/tai/development-space/worktrees/{identifier.lower()} (planned)"
             branch_name = f"forge/{identifier.lower()}"
             base_commit = "dryrun"
         else:
@@ -1397,7 +1397,7 @@ swift Scripts/CoreSelfCheck.swift
         canonical_path = project_config.get("canonical_path")
         default_branch = get_default_branch(canonical_path)
         branch_name = f"forge/{identifier.lower()}"
-        worktrees_root = Path(project_config.get("worktrees_dir", "/Users/tai/agent-development/worktrees"))
+        worktrees_root = Path(project_config.get("worktrees_dir", "/Users/tai/development-space/worktrees"))
         worktree_path = str(worktrees_root / identifier.lower())
 
         # 1. Squash & Merge Draft PR via gh CLI
